@@ -1,0 +1,28 @@
+$accent-color: #494949;
+
+.footer {
+  padding-block-start: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-top: 1px solid $accent-color;
+  color: $accent-color;
+}
+
+.footer__description {
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer__description p:nth-child(2) {
+  font-size: 12px;
+}
+
+.footer__link {
+  height: 20px;
+  width: 20px;
+  background-image: url("../../../images/gitHub.svg");
+  background-repeat: no-repeat;
+}

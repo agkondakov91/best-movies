@@ -1,0 +1,29 @@
+.root__header {
+  margin-block-end: 60px;
+}
+
+.header {
+  font-family: "Climate Crisis", sans-serif;
+  font-size: 120px;
+  line-height: 85%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.header__subtitle {
+  margin-block-start: 10px;
+  color: #494949;
+  text-transform: uppercase;
+}
+
+@media (width <= 1400px) {
+  .header {
+    font-size: clamp(2.5rem, 1.019rem + 7.41vw, 7.5rem);
+    letter-spacing: clamp(0.125rem, 0.069rem + 0.28vw, 0.313rem);
+  }
+
+  .header__subtitle {
+    margin-block-start: clamp(0.438rem, 0.382rem + 0.28vw, 0.625rem);
+    font-size: clamp(1rem, 0.926rem + 0.37vw, 1.25rem);
+  }
+}
