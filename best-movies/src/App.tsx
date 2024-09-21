@@ -1,3 +1,13 @@
+import { HomePage } from "./pages/homePage/homePage";
+import { FilmPage } from "./pages/filmPage/filmPage";
+
+import { Routes, Route } from "react-router-dom";
+
 export default function App() {
-  return <h1>Test</h1>;
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/film" element={<FilmPage />} />
+    </Routes>
+  );
 }
