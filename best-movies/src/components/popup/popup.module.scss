@@ -1,0 +1,54 @@
+$main-color: #0b0b0b;
+$blur-color: rgba(11, 11, 11, 0.7);
+
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: $blur-color;
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+}
+
+.opened {
+  display: flex;
+}
+
+.popup__content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 40px;
+  background: $main-color;
+  border: 3px solid white;
+}
+
+.popup__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+textarea {
+  width: 50%;
+  height: 44px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+textarea {
+  width: 100%;
+  height: auto;
+  resize: none;
+}

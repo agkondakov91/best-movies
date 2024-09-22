@@ -8,6 +8,7 @@ import { Button } from "../../components/button/button";
 import { Header } from "../../components/header/header";
 import { Description } from "../../components/description/description";
 import { Line } from "../../components/line/line";
+import { Popup } from "../../components/popup/popup";
 import { Footer } from "../../components/footer/footer";
 
 import { Movie, Comments } from "../../../../json-server/types";
@@ -24,6 +25,7 @@ export const FilmPage = () => {
   const [filmData, setFilmData] = useState<Movie>();
   const [comments, setComments] = useState<Comments[]>([]);
   const [loading, setLoading] = useState(true);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const { id } = useParams();
   const navigate = useNavigate();
@@ -116,6 +118,7 @@ export const FilmPage = () => {
         </section>
       </main>
       <Footer />
+      {/* <Popup /> */}
     </>
   );
 };
