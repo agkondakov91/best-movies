@@ -1,0 +1,38 @@
+.menu {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.menu__title {
+  margin-inline-end: 40px;
+  font-size: 25px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 10px;
+}
+
+@media (width <= 1400px) {
+  .menu__title {
+    font-size: clamp(1.25rem, 1.157rem + 0.46vw, 1.563rem);
+  }
+}
+
+@media (width <= 475px) {
+  .menu {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .menu__title {
+    margin-inline-end: 0;
+    margin-block-end: 20px;
+  }
+
+  .menu__list {
+    flex-direction: column;
+  }
+}

@@ -1,1 +1,25 @@
+.root__search-films {
+  margin-block-end: 60px;
+}
 
+.root__pagination {
+  margin-block-end: 30px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-films {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (width <= 830px) {
+  .search-films {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

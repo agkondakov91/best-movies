@@ -1,0 +1,19 @@
+.control {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.control__page {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: normal;
+}
+
+@media (width <= 830px) {
+  .control {
+    display: none;
+  }
+}
