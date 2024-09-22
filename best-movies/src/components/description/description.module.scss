@@ -1,0 +1,15 @@
+.description {
+  display: flex;
+  align-items: baseline;
+  padding: 50px 30px;
+}
+
+.description__title {
+  min-width: 230px;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.description__info {
+  margin-inline-start: 0;
+}

@@ -1,5 +1,9 @@
-import "./filmPage.scss";
+import styles from "./filmPage.module.scss";
+
+import clsx from "clsx";
+
+import { Description } from "../../components/description/description";
 
 export const FilmPage = () => {
-  return <h2>Header 2 small</h2>;
+  return <Description title="About" info="aaaasdfdsdfsdddddddd" />;
 };

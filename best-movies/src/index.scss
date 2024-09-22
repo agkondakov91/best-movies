@@ -27,6 +27,7 @@ body {
   font-family: $main-font-family;
   font-style: normal;
   font-size: $main-font-size;
+  font-optical-sizing: auto;
   font-weight: $main-font-weight;
   color: $main-white;
 }
@@ -42,6 +43,7 @@ p,
 ul,
 ol,
 li,
+dl,
 figure,
 blockquote {
   margin: 0;

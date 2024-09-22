@@ -1,7 +1,8 @@
-import "./homePage.scss";
+import styles from "./homePage.module.scss";
 import "swiper/css";
 
 import { useState, useEffect, useRef, useCallback } from "react";
+import clsx from "clsx";
 
 import { Header } from "../../components/header/header";
 import { Filter } from "../../components/filter/filter";
@@ -102,7 +103,10 @@ export const HomePage = () => {
     <>
       <Header title="Best Movies" subtitle="Top 10 Movies of 2024" />
       <main>
-        <section className="search-films root__search-films">
+        <section
+          className={clsx(styles.search, styles.root__search)}
+          aria-label="Search filters"
+        >
           <Filter
             filterCountry={sortByCountry}
             filterRating={sortByRating}
@@ -110,8 +114,8 @@ export const HomePage = () => {
           />
           <Input onSearch={handleSearch} />
         </section>
-        <section>
-          <div className="pagination root__pagination">
+        <section aria-label="List of films">
+          <div className={clsx(styles.pagination, styles.root__pagination)}>
             <Title name={heading} />
             <Pagination
               currentPage={`0${currentPage}`}
@@ -162,7 +166,7 @@ export const HomePage = () => {
                 ))}
               </Swiper>
             ) : (
-              <p className="error">
+              <p className={styles.error}>
                 The movie you are looking for was not found, please change your
                 search parameters
               </p>

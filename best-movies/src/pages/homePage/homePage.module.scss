@@ -2,7 +2,7 @@ main {
   margin-block-end: 60px;
 }
 
-.root__search-films {
+.root__search {
   margin-block-end: 60px;
 }
 
@@ -16,7 +16,7 @@ main {
   align-items: center;
 }
 
-.search-films {
+.search {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -27,7 +27,7 @@ main {
 }
 
 @media (width <= 830px) {
-  .search-films {
+  .search {
     flex-direction: column;
     align-items: flex-start;
   }

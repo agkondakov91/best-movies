@@ -7,9 +7,11 @@ $accent-color: #f5c518;
   transition: transform 0.3s ease-out;
 }
 
-.card:focus {
-  outline: 2px solid $accent-color;
-  outline-offset: 0;
+@media (width >= 1280px) {
+  .card:hover {
+    transform: translateY(-15px);
+    z-index: 10;
+  }
 }
 
 .card__link {
@@ -43,6 +45,12 @@ $accent-color: #f5c518;
   font-weight: 900;
   line-height: normal;
   text-align: center;
+}
+
+@media (width <= 1200px) {
+  .card__title {
+    font-size: clamp(1.25rem, 1.136rem + 0.57vw, 1.563rem);
+  }
 }
 
 .card__subtitle {

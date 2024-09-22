@@ -17,7 +17,7 @@ export interface Movie {
 }
 
 export type Comments = {
-  id: string;
+  id?: string;
   userName: string;
   userComment: string;
   commentsTime: string;
