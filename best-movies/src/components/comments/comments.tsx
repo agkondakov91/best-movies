@@ -6,7 +6,7 @@ type CommentsProps = Comments & {
   onDelete: (id: string) => void;
 };
 
-export const userComments = (props: CommentsProps) => {
+export const UserComments = (props: CommentsProps) => {
   return (
     <article className={styles.comment}>
       <div className={styles.edit}>

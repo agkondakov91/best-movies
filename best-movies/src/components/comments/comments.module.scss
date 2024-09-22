@@ -38,3 +38,10 @@ $accent-color: #f5c518;
   color: $shades-gray-color;
   font-size: 16px;
 }
+
+@media (width <= 830px) {
+  .text {
+    width: 100%;
+    font-size: clamp(1rem, 0.843rem + 0.78vw, 1.25rem);
+  }
+}

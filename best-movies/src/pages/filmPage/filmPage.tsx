@@ -8,6 +8,7 @@ import { Button } from "../../components/button/button";
 import { Header } from "../../components/header/header";
 import { Description } from "../../components/description/description";
 import { Line } from "../../components/line/line";
+import { UserComments } from "../../components/comments/comments";
 import { Popup } from "../../components/popup/popup";
 import { Footer } from "../../components/footer/footer";
 
@@ -69,6 +70,72 @@ export const FilmPage = () => {
     setEditComment(null);
   };
 
+  const handleAddComment = async () => {
+    const newComment = {
+      filmId: filmData?.id,
+      userName,
+      userComment,
+      commentsTime: new Date().toLocaleString(),
+    };
+
+    const result = await addComment(newComment);
+
+    if (result) {
+      setUserName("");
+      setUserComment("");
+      setIsPopupOpen(false);
+      setComments((prevComment) => [...prevComment, result]);
+    }
+  };
+
+  //Comment function
+  const handleEditComment = (commentId: string) => {
+    const commentToEdit = comments.find((comment) => comment.id === commentId);
+
+    if (commentToEdit) {
+      setUserName(commentToEdit.userName);
+      setUserComment(commentToEdit.userComment);
+      setEditComment(commentId);
+      setIsPopupOpen(true);
+    }
+  };
+
+  const handleUpdateComment = async () => {
+    if (editComment) {
+      const update = {
+        filmId: filmData?.id,
+        userName,
+        userComment,
+        commentsTime: new Date().toLocaleString(),
+      };
+
+      const result = await updateComment(editComment, update);
+
+      if (result) {
+        setComments((prevComments) =>
+          prevComments.map((comment) =>
+            comment.id === editComment ? result : comment
+          )
+        );
+
+        setIsPopupOpen(false);
+        setUserName("");
+        setUserComment("");
+        setEditComment(null);
+      }
+    }
+  };
+
+  const handleDeleteComment = async (commentId: string) => {
+    const isSuccess = await deleteComment(commentId);
+
+    if (isSuccess) {
+      setComments((prevComment) =>
+        prevComment.filter((comment) => comment.id !== commentId)
+      );
+    }
+  };
+
   return (
     <>
       <div className={clsx(styles.navigation, styles.root__navigation)}>
@@ -127,7 +194,19 @@ export const FilmPage = () => {
             className={clsx(styles.comments, {
               [styles.comments_add]: comments.length,
             })}
-          ></div>
+          >
+            {comments.map((comment) => (
+              <UserComments
+                key={comment.id}
+                id={comment.id}
+                userName={comment.userName}
+                userComment={comment.userComment}
+                commentsTime={comment.commentsTime}
+                onEdit={handleEditComment}
+                onDelete={handleDeleteComment}
+              />
+            ))}
+          </div>
           <div className={styles.button}>
             <Button name="Add comments" onClick={handleOpenPopup} />
           </div>
@@ -139,7 +218,7 @@ export const FilmPage = () => {
         userComment={userComment}
         isOpen={isPopupOpen}
         onClose={handleClosePopup}
-        addComment={() => console.log("test")}
+        addComment={editComment ? handleUpdateComment : handleAddComment}
         setName={setUserName}
         setComment={setUserComment}
       />

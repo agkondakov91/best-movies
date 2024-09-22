@@ -71,4 +71,9 @@ iframe {
   .button {
     padding-inline-start: clamp(0rem, -1.176rem + 5.88vw, 1.875rem);
   }
+
+  .comments_add {
+    padding: 0 clamp(0rem, -1.176rem + 5.88vw, 1.875rem)
+      clamp(2.5rem, 1.324rem + 5.88vw, 4.375rem);
+  }
 }

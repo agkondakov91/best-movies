@@ -171,5 +171,13 @@
       "trailer": "https://www.youtube.com/embed/g8zxiB5Qhsc?si=0H-tLCFORB0MF2J5"
     }
   ],
-  "comments": []
+  "comments": [
+    {
+      "filmId": "5",
+      "userName": "Alexander",
+      "userComment": "Some comments for checking the operability of queries and function logic, vol. 2",
+      "commentsTime": "23.09.2024, 00:29:11",
+      "id": "6025"
+    }
+  ]
 }
