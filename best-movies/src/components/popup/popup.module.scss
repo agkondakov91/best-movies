@@ -52,3 +52,23 @@ textarea {
   height: auto;
   resize: none;
 }
+
+@media (width <= 830px) {
+  .popup__content {
+    padding: clamp(1.25rem, 0.466rem + 3.92vw, 2.5rem);
+    gap: clamp(1.25rem, 0.466rem + 3.92vw, 2.5rem);
+  }
+
+  .popup__title {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .popup__form {
+    gap: clamp(0.625rem, 0.233rem + 1.96vw, 1.25rem);
+  }
+
+  input {
+    width: 100%;
+  }
+}

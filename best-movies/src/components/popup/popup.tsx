@@ -48,8 +48,8 @@ export const Popup = (props: PopupProps) => {
             onChange={handleNameChange}
           />
           <textarea
-            name=""
-            id=""
+            name="comment"
+            id="comment"
             placeholder="Your comment"
             rows={5}
             spellCheck="true"

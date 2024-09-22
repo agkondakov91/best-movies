@@ -26,6 +26,9 @@ export const FilmPage = () => {
   const [comments, setComments] = useState<Comments[]>([]);
   const [loading, setLoading] = useState(true);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [userName, setUserName] = useState("");
+  const [userComment, setUserComment] = useState("");
+  const [editComment, setEditComment] = useState<string | null>(null);
 
   const { id } = useParams();
   const navigate = useNavigate();
@@ -57,6 +60,14 @@ export const FilmPage = () => {
   };
 
   //Popup function
+  const handleOpenPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+    setEditComment(null);
+  };
 
   return (
     <>
@@ -112,13 +123,26 @@ export const FilmPage = () => {
             <p>No trailer available</p>
           )}
           <Description title="Comments" />
+          <div
+            className={clsx(styles.comments, {
+              [styles.comments_add]: comments.length,
+            })}
+          ></div>
           <div className={styles.button}>
-            <Button name="Add comments" onClick={() => console.log("click")} />
+            <Button name="Add comments" onClick={handleOpenPopup} />
           </div>
         </section>
       </main>
       <Footer />
-      {/* <Popup /> */}
+      <Popup
+        userName={userName}
+        userComment={userComment}
+        isOpen={isPopupOpen}
+        onClose={handleClosePopup}
+        addComment={() => console.log("test")}
+        setName={setUserName}
+        setComment={setUserComment}
+      />
     </>
   );
 };

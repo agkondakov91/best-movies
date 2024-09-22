@@ -58,6 +58,15 @@ iframe {
   padding-inline-start: 30px;
 }
 
+.comments {
+  display: none;
+}
+
+.comments_add {
+  display: block;
+  padding: 0 30px 70px;
+}
+
 @media (width <= 830px) {
   .button {
     padding-inline-start: clamp(0rem, -1.176rem + 5.88vw, 1.875rem);
