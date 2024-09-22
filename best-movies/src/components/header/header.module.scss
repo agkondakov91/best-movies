@@ -17,6 +17,10 @@
 }
 
 @media (width <= 1400px) {
+  .root__header {
+    margin-block-end: clamp(2.5rem, 2.13rem + 1.85vw, 3.75rem);
+  }
+
   .header {
     font-size: clamp(2.5rem, 1.019rem + 7.41vw, 7.5rem);
     letter-spacing: clamp(0.125rem, 0.069rem + 0.28vw, 0.313rem);

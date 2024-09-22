@@ -17,7 +17,7 @@ export const fetchMovies = async () => {
   }
 };
 
-export const fetchFilm = async (id: string) => {
+export const fetchFilm = async (id: string | undefined) => {
   try {
     const response = await fetch("http://localhost:3000/movieInfo");
 
@@ -34,7 +34,7 @@ export const fetchFilm = async (id: string) => {
   }
 };
 
-export const fetchComments = async (filmId: string) => {
+export const fetchComments = async (filmId: string | undefined) => {
   try {
     const response = await fetch(
       `http://localhost:3000/comments?filmId=${filmId}`

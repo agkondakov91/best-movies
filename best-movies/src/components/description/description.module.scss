@@ -13,3 +13,26 @@
 .description__info {
   margin-inline-start: 0;
 }
+
+@media (1400px >= width >= 830px) {
+  .description__title {
+    min-width: clamp(9.375rem, 2.094rem + 14.04vw, 14.375rem);
+  }
+}
+
+@media (width <= 830px) {
+  .description {
+    flex-direction: column;
+    gap: 10px;
+    padding: clamp(1.25rem, 0.074rem + 5.88vw, 3.125rem)
+      clamp(0rem, -1.176rem + 5.88vw, 1.875rem);
+  }
+
+  .description__title {
+    font-size: clamp(1.25rem, 1.054rem + 0.98vw, 1.563rem);
+  }
+
+  .description__info {
+    font-size: clamp(1rem, 0.843rem + 0.78vw, 1.25rem);
+  }
+}

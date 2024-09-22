@@ -26,6 +26,12 @@ main {
   margin-block-end: 60px;
 }
 
+@media (width <= 1400px) {
+  .root__search {
+    margin-block-end: clamp(2.5rem, 2.13rem + 1.85vw, 3.75rem);
+  }
+}
+
 @media (width <= 830px) {
   .search {
     flex-direction: column;

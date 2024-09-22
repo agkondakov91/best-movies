@@ -2,7 +2,7 @@ import styles from "./description.module.scss";
 
 type DescriptionProps = {
   title: string;
-  info?: string;
+  info?: string | number;
 };
 
 export const Description = (props: DescriptionProps) => {

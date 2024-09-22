@@ -2,7 +2,7 @@ import styles from "./header.module.scss";
 
 type HeaderProps = {
   title: string;
-  subtitle: string;
+  subtitle?: string;
 };
 
 export const Header = (props: HeaderProps) => {
