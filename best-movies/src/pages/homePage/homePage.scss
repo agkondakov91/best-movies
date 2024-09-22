@@ -1,3 +1,7 @@
+main {
+  margin-block-end: 60px;
+}
+
 .root__search-films {
   margin-block-end: 60px;
 }
@@ -9,12 +13,17 @@
 .pagination {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .search-films {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.error {
+  margin-block-end: 60px;
 }
 
 @media (width <= 830px) {

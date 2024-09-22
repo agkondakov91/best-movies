@@ -1,4 +1,4 @@
-type Movie = {
+export interface Movie {
   id: string;
   time: string;
   name: string;
@@ -12,10 +12,11 @@ type Movie = {
   likes: number;
   imageUrl: string;
   imageTitle: string;
+  alt: string;
   trailer: string;
-};
+}
 
-type Comments = {
+export type Comments = {
   id: string;
   userName: string;
   userComment: string;

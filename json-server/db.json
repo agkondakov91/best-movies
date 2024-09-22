@@ -14,6 +14,7 @@
       "likes": 10000,
       "imageUrl": "/images/1.jpg",
       "imageTitle": "/images/1(1).jpg",
+      "alt": "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
       "trailer": "https://www.youtube.com/embed/Way9Dexny3w?si=ZOJbhe0PTTfpiRCu"
     },
     {
@@ -30,6 +31,7 @@
       "likes": 9850,
       "imageUrl": "/images/2.jpg",
       "imageTitle": "/images/2(1).jpg",
+      "alt": "The origin story of renegade warrior Furiosa before her encounter and teamup with Mad Max.",
       "trailer": "https://www.youtube.com/embed/XJMuhwVlca4?si=70cITsIW9y0GV4Sm"
     },
     {
@@ -46,6 +48,7 @@
       "likes": 7390,
       "imageUrl": "/images/3.jpg",
       "imageTitle": "/images/3(1).jpg",
+      "alt": "When a construction worker unexpectedly joins a local theater's production of Romeo and Juliet, the drama onstage starts to mirror his own life.",
       "trailer": "https://www.youtube.com/embed/R1TycuGX4Mw?si=kbp4-LHJVSG2fhVl"
     },
     {
@@ -62,6 +65,7 @@
       "likes": 6782,
       "imageUrl": "/images/4.jpg",
       "imageTitle": "/images/4(1).jpg",
+      "alt": "A journey across a dystopian future America, following a team of military-embedded journalists as they race against time to reach DC before rebel factions descend upon the White House.",
       "trailer": "https://www.youtube.com/embed/aDyQxtg0V2w?si=U3wJGjwFiRUkBF6x"
     },
     {
@@ -78,6 +82,7 @@
       "likes": 6349,
       "imageUrl": "/images/5.jpg",
       "imageTitle": "/images/5(1).jpg",
+      "alt": "Tashi, a former tennis prodigy turned coach, transformed her husband into a champion.",
       "trailer": "https://www.youtube.com/embed/VobTTbg-te0?si=6YfF_dc3YhzwuUJ7"
     },
     {
@@ -94,6 +99,7 @@
       "likes": 8324,
       "imageUrl": "/images/6.jpg",
       "imageTitle": "/images/6(1).jpg",
+      "alt": "Deadpool is offered a place in the Marvel Cinematic Universe by the Time Variance Authority.",
       "trailer": "https://www.youtube.com/embed/73_1biulkYk?si=CtjHQMwwztdVBN7y"
     },
     {
@@ -110,6 +116,7 @@
       "likes": 5327,
       "imageUrl": "/images/7.jpg",
       "imageTitle": "/images/7(1).jpg",
+      "alt": "After a family tragedy, three generations of the Deetz family return home to Winter River.",
       "trailer": "https://www.youtube.com/embed/As-vKW4ZboU?si=SybQgxFxsSnZP3hr"
     },
     {
@@ -126,6 +133,7 @@
       "likes": 5649,
       "imageUrl": "/images/8.jpg",
       "imageTitle": "/images/8(1).jpg",
+      "alt": "During a weekend backpacking trip in the Catskills, 17-year-old Sam navigates the clash of egos between her father and his oldest friend.",
       "trailer": "https://www.youtube.com/embed/RGZNT7qgeG4?si=c04BroOgY7X9nsoS"
     },
     {
@@ -142,6 +150,7 @@
       "likes": 4702,
       "imageUrl": "/images/9.jpg",
       "imageTitle": "/images/9(1).jpg",
+      "alt": "A stuntman, fresh off an almost career-ending accident, has to track down a missing movie star.",
       "trailer": "https://www.youtube.com/embed/j7jPnwVGdZ8?si=otTeEkWjvZI1I28J"
     },
     {
@@ -158,6 +167,7 @@
       "likes": 4978,
       "imageUrl": "/images/10.jpg",
       "imageTitle": "/images/10(1).jpg",
+      "alt": "An anonymous young man unleashes a campaign of vengeance against the corrupt leaders who murdered his mother and continue to systematically victimize the poor and powerless.",
       "trailer": "https://www.youtube.com/embed/g8zxiB5Qhsc?si=0H-tLCFORB0MF2J5"
     }
   ],

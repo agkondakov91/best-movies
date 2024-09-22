@@ -7,7 +7,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/film" element={<FilmPage />} />
+      <Route path="/film/:id" element={<FilmPage />} />
     </Routes>
   );
 }
