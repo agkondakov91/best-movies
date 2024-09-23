@@ -15,7 +15,7 @@ _Pet-проект приложения с информацией по десят
 
 Вся информация по конкретному фильму подтягивается с **json-server**
 
-Проект реализован с использованием технологий:\
+Проект реализован с использованием технологий:
 
 ![Static Badge](https://img.shields.io/badge/HTML5-231572?style=for-the-badge&logo=HTML5&logoColor=ffffff&labelColor=E34F26&color=0B0B0B)
 ![Static Badge](https://img.shields.io/badge/SASS-231572?style=for-the-badge&logo=Sass&logoColor=ffffff&labelColor=CC6699&color=0B0B0B)
