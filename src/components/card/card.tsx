@@ -1,5 +1,5 @@
 import styles from "./card.module.scss";
-import { Movie } from "../../../../json-server/types";
+import { Movie } from "../../utils/types";
 
 import { Link } from "react-router-dom";
 

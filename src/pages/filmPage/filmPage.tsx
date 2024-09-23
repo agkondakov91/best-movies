@@ -12,7 +12,7 @@ import { UserComments } from "../../components/comments/comments";
 import { Popup } from "../../components/popup/popup";
 import { Footer } from "../../components/footer/footer";
 
-import { Movie, Comments } from "../../../../json-server/types";
+import { Movie, Comments } from "../../utils/types";
 import {
   fetchFilm,
   fetchComments,

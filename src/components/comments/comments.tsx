@@ -1,5 +1,5 @@
 import styles from "./comments.module.scss";
-import { Comments } from "../../../../json-server/types";
+import { Comments } from "../../utils/types";
 
 type CommentsProps = Comments & {
   onEdit: (id: string) => void;

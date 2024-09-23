@@ -1,4 +1,4 @@
-import { Movie, Comments } from "../../../json-server/types";
+import { Movie, Comments } from "./types";
 
 export const fetchMovies = async () => {
   try {

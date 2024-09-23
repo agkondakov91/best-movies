@@ -12,8 +12,8 @@ type PopupProps = {
   isOpen: boolean;
   onClose: () => void;
   addComment: () => void;
-  setName: Dispatch<SetStateAction<any>>;
-  setComment: Dispatch<SetStateAction<any>>;
+  setName: Dispatch<SetStateAction<string>>;
+  setComment: Dispatch<SetStateAction<string>>;
 };
 
 export const Popup = (props: PopupProps) => {

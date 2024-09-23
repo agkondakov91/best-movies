@@ -1,4 +1,5 @@
 import styles from "./homePage.module.scss";
+import SwiperCore from "swiper";
 import "swiper/css";
 
 import { useState, useEffect, useRef, useCallback } from "react";
@@ -13,7 +14,7 @@ import { Card } from "../../components/card/card";
 import { Footer } from "../../components/footer/footer";
 
 import { fetchMovies } from "../../utils/api";
-import { Movie } from "../../../../json-server/types";
+import { Movie } from "../../utils/types";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -25,7 +26,8 @@ export const HomePage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [heading, setHeading] = useState("All Movies");
 
-  const swiperRef = useRef<any>(null);
+  // const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperCore | null>(null);
 
   useEffect(() => {
     const loadMovies = async () => {
@@ -84,19 +86,25 @@ export const HomePage = () => {
 
   //Pagination
   const prevSlide = () => {
-    swiperRef.current.slideTo(0, 1000);
+    if (swiperRef.current) {
+      swiperRef.current.slideTo(0, 1000);
+    }
   };
 
   const nextSlide = () => {
-    swiperRef.current.slideTo(5, 1000);
+    if (swiperRef.current) {
+      swiperRef.current.slideTo(5, 1000);
+    }
   };
 
   const handleSlideChange = () => {
     const slidesPerView = 3;
-    const newPageView =
-      Math.floor(swiperRef.current.activeIndex / slidesPerView) + 1;
+    if (swiperRef.current) {
+      const newPageView =
+        Math.floor(swiperRef.current.activeIndex / slidesPerView) + 1;
 
-    setCurrentPage(newPageView);
+      setCurrentPage(newPageView);
+    }
   };
 
   return (
