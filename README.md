@@ -16,13 +16,14 @@ _Pet-проект приложения с информацией по десят
 Вся информация по конкретному фильму подтягивается с **json-server**
 
 Проект реализован с использованием технологий:\
-![Static Badge](https://img.shields.io/badge/HTML5-231572?style=flat&logo=HTML5&logoColor=ffffff&labelColor=E34F26&color=231212)
-![Static Badge](https://img.shields.io/badge/SASS-231572?style=for-the-badge&logo=Sass&logoColor=ffffff&labelColor=CC6699&color=231212)
-![Static Badge](https://img.shields.io/badge/TypeScript-231572?style=for-the-badge&logo=TypeScript&logoColor=ffffff&labelColor=3178C6&color=231212)
-![Static Badge](https://img.shields.io/badge/React-231572?style=for-the-badge&logo=React&logoColor=ffffff&labelColor=61DAFB&color=231212)
-![Static Badge](https://img.shields.io/badge/React%20Router-231572?style=for-the-badge&logo=React%20Router&logoColor=ffffff&labelColor=CA4245&color=231212)
-![Static Badge](https://img.shields.io/badge/Vite-231572?style=for-the-badge&logo=Vite&logoColor=ffffff&labelColor=646CFF&color=231212)
-![Static Badge](https://img.shields.io/badge/Swiper-231572?style=for-the-badge&logo=Swiper&logoColor=ffffff&labelColor=0080FF&color=231212)
+
+![Static Badge](https://img.shields.io/badge/HTML5-231572?style=for-the-badge&logo=HTML5&logoColor=ffffff&labelColor=E34F26&color=0B0B0B)
+![Static Badge](https://img.shields.io/badge/SASS-231572?style=for-the-badge&logo=Sass&logoColor=ffffff&labelColor=CC6699&color=0B0B0B)
+![Static Badge](https://img.shields.io/badge/TypeScript-231572?style=for-the-badge&logo=TypeScript&logoColor=ffffff&labelColor=3178C6&color=0B0B0B)
+![Static Badge](https://img.shields.io/badge/React-231572?style=for-the-badge&logo=React&logoColor=ffffff&labelColor=61DAFB&color=0B0B0B)
+![Static Badge](https://img.shields.io/badge/React%20Router-231572?style=for-the-badge&logo=React%20Router&logoColor=ffffff&labelColor=CA4245&color=0B0B0B)
+![Static Badge](https://img.shields.io/badge/Vite-231572?style=for-the-badge&logo=Vite&logoColor=ffffff&labelColor=646CFF&color=0B0B0B)
+![Static Badge](https://img.shields.io/badge/Swiper-231572?style=for-the-badge&logo=Swiper&logoColor=ffffff&labelColor=0080FF&color=0B0B0B)
 
 Сборка проекта осуществляется с помощью **Vite**.
 
