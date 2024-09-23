@@ -1,0 +1,33 @@
+$main-color: #0b0b0b;
+$accent-color: #f5c518;
+
+.button {
+  height: 44px;
+  padding: 10px 20px;
+  align-self: flex-start;
+  border: 1px solid white;
+  border-radius: 22px;
+  line-height: normal;
+  background-color: $main-color;
+  color: white;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+@media (width >= 1280px) {
+  .button:hover {
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+    color: $main-color;
+  }
+}
+
+.button:focus {
+  outline: 2px solid $accent-color;
+  outline-offset: 0;
+}
+
+@media (width <= 475px) {
+  .button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,47 @@
+$shades-gray-color: #494949;
+$accent-color: #f5c518;
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-inline-start: 20px;
+  margin-block-end: 40px;
+  border-left: 1px solid $accent-color;
+}
+
+.comment:last-child {
+  margin-block-end: 0;
+}
+
+.edit {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.text {
+  width: 60%;
+}
+
+.time {
+  color: $shades-gray-color;
+  font-size: 16px;
+}
+
+@media (width <= 830px) {
+  .text {
+    width: 100%;
+    font-size: clamp(1rem, 0.843rem + 0.78vw, 1.25rem);
+  }
+}

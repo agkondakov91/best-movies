@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+$main-black: #0b0b0b;
+$main-white: white;
+$main-font-family: "Inter", sans-serif;
+$main-font-size: 20px;
+$main-font-weight: 400;
+$accent-color: #f5c518;
+$spacing-line: 1.5;
+$spacing-large-70: 70px;
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  margin: 0 auto;
+  padding: $spacing-large-70;
+  line-height: $spacing-line;
+  background-color: $main-black;
+  font-family: $main-font-family;
+  font-style: normal;
+  font-size: $main-font-size;
+  font-optical-sizing: auto;
+  font-weight: $main-font-weight;
+  color: $main-white;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li,
+dl,
+figure,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+@media (width <= 1400px) {
+  .body {
+    padding: clamp(1.25rem, 0.324rem + 4.63vw, 4.375rem);
+  }
+}

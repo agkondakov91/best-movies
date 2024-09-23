@@ -1,0 +1,14 @@
+.title {
+  color: white;
+  font-family: "Climate Crisis", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media (width <= 830px) {
+  .title {
+    font-size: clamp(1.25rem, 1.054rem + 0.98vw, 1.563rem);
+  }
+}
